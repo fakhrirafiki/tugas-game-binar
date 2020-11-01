@@ -1,0 +1,58 @@
+body {
+    color: #ffffff96;
+    padding-bottom: 550px;
+}
+h1 {
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px;
+}
+
+table {
+    text-align: center;
+    min-width: 500px;
+
+    margin: auto;
+    line-height: 200%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #403e3c5e;
+    border: 5px solid #3c3c3c;
+    text-align: center;
+}
+
+.containerBoardHistories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.boardHistories {
+    width: 500px;
+    background-color: #9c835f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: 60px;
+}
+
+.hero {
+    width: 70px;
+    height: 70px;
+    background-color: #9c835f;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 0 10px;
+    transition: linear 200ms;
+}
+
+nav {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}

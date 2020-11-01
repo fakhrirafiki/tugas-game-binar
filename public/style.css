@@ -1,0 +1,755 @@
+/********* Font Sesuai Ukuran layar ********/
+html {
+	font-size: 0.6rem;
+}
+
+h1,
+h2,
+h3 {
+	/* font-family: "Bebas Neue"; */
+}
+
+a {
+	cursor: pointer;
+}
+
+a:hover {
+	font-weight: 600;
+}
+
+body {
+	background-color: black;
+	position: relative;
+}
+
+.slideRafiki h1 {
+	font-weight: 600;
+	font-size: 500%;
+	text-transform: uppercase;
+}
+
+.slideRafiki h2 {
+	font-size: 330%;
+	text-transform: uppercase;
+}
+
+.slideRafiki h4 {
+	font-size: 170%;
+}
+
+/******** navbar *********/
+
+.wrapper-nav {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar {
+	background-color: #2b281ff3;
+	letter-spacing: 1px;
+}
+
+.navbar a {
+	color: #fff !important;
+	transition: transform 0.2s;
+}
+
+.navbar a:hover {
+	font-weight: 600;
+	transform: scale(1);
+}
+
+.menu-utama a:hover {
+	font-weight: 600;
+	/* transform: scale(1.2); */
+}
+
+.navbar-brand {
+	font-size: 200%;
+	font-weight: 600;
+}
+
+.navbar-light .navbar-toggler {
+	border: 1px solid #ffffff40;
+}
+
+.nav-item {
+	border-bottom: 1px solid #ffffff40;
+	display: inline-block;
+	text-align: center;
+}
+
+/******** END OF navbar *********/
+
+/******** SLIDE  ********/
+.slideRafiki {
+	min-height: 100vh;
+	color: #fff;
+	letter-spacing: 1px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	/* background-origin: border-box; */
+	background-size: cover;
+	background-color: black;
+	background-position: center bottom;
+}
+
+/* slide 1 */
+.slideRafiki.slide_1 {
+	background-image: url(img/main-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.slideRafiki.slide_1 .wrapperText {
+	margin-top: -60px;
+	padding: 0 30px;
+	/* background: chartreuse; */
+}
+
+.slideRafiki.slide_1 h4 {
+	padding: 20px;
+}
+
+.slideRafiki.slide_1 #theStory {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%);
+	margin: auto;
+	text-align: center;
+}
+
+.slideRafiki.slide_1 #theStory p {
+	font-size: 75%;
+	letter-spacing: 0px;
+}
+
+.slideRafiki.slide_1 #theStory svg {
+	position: relative;
+	top: -15px;
+	transform: scale(1.8, 1.2);
+}
+
+.slideRafiki.slide_2 {
+	background-image: url(img/the-games-bg.jpg);
+	display: flex;
+	flex-direction: row;
+}
+
+.slideRafiki.slide_2 .wrapper__slide2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper__slide2__chlid1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	/* align-content: center; */
+	/* background-color: coral; */
+	width: 100%;
+	padding-bottom: 50px;
+	text-align: center;
+
+	/* height: 400px; */
+}
+
+.wrapper__slide2__chlid2 {
+	/* background-color: crimson; */
+	margin: auto;
+	width: 80%;
+
+	/* height: 400px; */
+}
+
+.slideRafiki.slide_3 {
+	background-image: url(img/features.jpg);
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.wrapper__slide3 {
+	/* background-color: #222; */
+	/* margin-top: -100px; */
+	padding: 10px;
+	width: 70%;
+	position: relative;
+	top: 20%;
+}
+
+.wrapper__slide3 ul {
+	margin-top: 40px;
+	margin-left: -27px;
+}
+
+.ulRafiki__slide3 p {
+	font-size: 150%;
+}
+.ulRafiki__slide3 h4 {
+	font-weight: 500;
+	color: #f9b447;
+	margin-top: 20px;
+}
+
+.slideRafiki.slide_4 {
+	background-image: url(img/requirements.png);
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+.slideRafiki.slide_4 h2 {
+	padding-bottom: 50px;
+}
+
+.slideRafiki.slide_4 h4 {
+	font-weight: 500;
+	color: #f9b447;
+}
+
+.slideRafiki.slide_4 p {
+	font-size: 120%;
+}
+
+.wrapper__slide4 {
+	/* background-color: #222222; */
+	/* margin-left: 80px; */
+	padding: 10px;
+	width: 100%;
+	position: relative;
+	top: 20%;
+}
+
+.slideRafiki .gridRafiki {
+	/* background-color: #b68888; */
+	width: 100%;
+	max-width: 400px;
+	min-height: 300px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+		"satu dua"
+		"tiga empat"
+		"lima lima";
+}
+.gridRafikiItem {
+	/* border: 1px solid blue; */
+	padding: 10px;
+	border-color: rgba(218, 218, 218, 0.226);
+	border-style: solid;
+}
+
+.gridRafikiItem:nth-child(1) {
+	border-width: 1px;
+}
+
+.gridRafikiItem:nth-child(2) {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+}
+
+.gridRafikiItem:nth-child(3) {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+
+.gridRafikiItem:nth-child(4) {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+}
+
+.gridRafikiItem:nth-child(5) {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+}
+
+/* slide 5 */
+.slideRafiki.slide_5 {
+	background-image: url(img/top-score-bg.png);
+}
+
+.wrapper__slide5 {
+	width: 100%;
+	display: flex;
+	padding: 30px;
+	flex-direction: column;
+}
+
+
+
+.colomText__slide5 {
+	width: 100%;
+	/* background-color: saddlebrown; */
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.colomText__slide5 p {
+	margin-top: 10px;
+
+}
+
+.colomText__slide5 button {
+	margin-top: 20px;
+	width: 150px;
+	height: 35px;
+	font-weight: 600;
+}
+
+.colomgrid__slide5 {
+	position: relative;
+	letter-spacing: 0;
+
+	width: 100%;
+	padding: 30px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-items: center;
+	/* background-color: beige; */
+	color : #222;
+}
+
+.colomgrid__slide5 > div {
+	position: relative;
+	padding: 10px;
+	color: white;
+	width: 250px;
+	background-color: #1A1B1C;
+	border-radius: 5px;
+}
+
+.colomgrid__slide5 > div::after {
+font-family: FontAwesome;
+content: "\f099";
+color: #5F6061;
+display: inline-block;
+padding-right: 6px;
+vertical-align: middle;
+font-size: 15px;
+position: absolute;
+top:15px;
+right: 5px;
+}
+
+.cardRafiki:nth-child(1) {
+	justify-self: end;
+}
+.cardRafiki:nth-child(2) {
+	justify-self: center;
+}
+
+@media (max-width: 576px) {
+	.cardRafiki:nth-child(2) {
+		justify-self: start;
+	}
+}
+
+.cardRafiki:nth-child(3) {
+	justify-self: end;
+}
+  
+.wrapper__photoprofil__slide5::before {
+	content: " ";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #F9B447;
+	border-radius: 50%;
+	position: absolute;
+	left: 15px;
+	top: 12px;
+}
+
+   .cardRafiki .photoProfilnya {
+	  position: relative;
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  background-size: cover;
+	  z-index: 10;
+	}
+	
+.cardRafiki .person1 {
+	background-image: url(img/person1.jpg);
+  }
+  .cardRafiki .person2 {
+	background-image: url(img/person2.jpg);
+}
+.cardRafiki .person3 {
+	background-image: url(img/person3.jpg);
+}
+
+  .cardRafiki .namaProfilnya {
+	position: absolute;
+	top : 15px;
+	left : 70px;
+}
+
+.cardRafiki .namaProfilnya h4{
+	color : #E3A142;
+	font-weight: 600;
+	font-size: 160%;
+}
+
+.cardRafiki .namaProfilnya p{
+	margin-top : -5px
+}
+
+.cardRafiki p:nth-child(3) { 
+	margin-top: 10px;
+	font-style: italic;
+}
+
+.cardRafiki p:nth-child(4) { 
+	color: #757575;
+	letter-spacing: 0;
+}
+
+
+
+
+
+/* slide 6 */
+
+.slideRafiki.slide_6 {
+	background-image: url(img/top-score-bg.png), url(img/newsletter-bg.jpg);
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.wrapper__slide6 {
+	/* background-color: #444; */
+	/* margin-top: -100px; */
+	padding-right: 15px;
+	width: 80%;
+	position: relative;
+	top: 20%;
+}
+
+.wrapper__slide6 h2 {
+	margin: 10px 0;
+}
+
+.wrapper__slide6 h4 {
+	/* font-weight: 00; */
+	font-size: 140%;
+}
+
+.wrapper__slide6 p {
+	/* font-weight: 00; */
+	font-size: 120%;
+}
+
+.slideRafiki.slide_6 form {
+	position: relative;
+	margin-top: 30px;
+}
+.slideRafiki.slide_6 .inputRafiki span {
+	position: absolute;
+	color: rgb(128, 128, 128);
+	top: 2px;
+}
+
+.slideRafiki.slide_6 .inputRafiki {
+	width: 100%;
+	height: 35px;
+	background-color: #1c1e1f;
+	border-radius: 3px;
+	position: relative;
+	padding-left: 5px;
+}
+
+.slideRafiki.slide_6 .inputRafiki input {
+	position: relative;
+	top: 15px;
+	width: 100%;
+	height: 20px;
+	background-color: #1c1e1f;
+	border-radius: 3px;
+	border-style: hidden;
+	color: #fbc230;
+	font-size: 120%;
+}
+
+.slideRafiki.slide_6 button {
+	width: 100%;
+	height: 35px;
+	font-weight: 600;
+	position: relative;
+	top: 10px;
+	/* left: 10px; */
+}
+
+.slideRafiki.slide_6 .inputRafiki input:focus {
+	outline: 0px;
+}
+
+/******** END OF SLIDE  ********/
+
+/******* FOOTER RAFIKI *********/
+.footerRafiki {
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 30px 0px 10px 0px;
+	background-color: rgba(124, 124, 124, 0);
+	position: relative;
+	width: 100%;
+	bottom: 0;
+
+}
+
+.footerRafiki hr {
+	border-top: 1px solid rgba(218, 218, 218, 0.226);
+	width: 95%;
+}
+
+.sectionFooter1 {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footerMenuRafiki {
+	display: flex;
+	flex-direction: column;
+	min-width: 400px;
+	width: fit-content%;
+	margin-bottom: 20px;
+}
+
+.footerMenuRafiki a {
+	margin: 0 10px;
+}
+
+.footerSocialRafiki {
+	display: flex;
+	width: fit-content;
+	min-width: 120px;
+	justify-content: space-between;
+}
+
+.footerSocialRafiki i {
+	/* margin: 0 10px; */
+	font-size: 150%;
+}
+
+.sectionFooter2 {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 95%;
+	margin: auto;
+
+	justify-content: space-between;
+}
+
+.sectionFooter2 p:nth-child(1) {
+	color : #3d3d3d;
+}
+
+/******** ASET  ********/
+/* button */
+.btnRafiki {
+	width: 170px;
+	height: 40px;
+	font-weight: 700;
+	background-color: #f9b342;
+	border-color: #f9b342;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	/* slide 3 */
+	.slideRafiki.slide_3 {
+		background-image: url(img/features.jpg);
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	.wrapper__slide3 {
+		/* background-color: #222; */
+		padding: 50px;
+		width: 50%;
+	}
+
+	/* slide 4 */
+	.wrapper__slide4 {
+		/* background-color: #222222; */
+		margin-left: 80px;
+		padding: 10px;
+		width: 80%;
+		position: relative;
+		top: 20%;
+	}
+
+	.slideRafiki .gridRafiki {
+		/* background-color: #b68888; */
+		width: 400px;
+	}
+
+	/*slide 6*/
+	.wrapper__slide6 {
+		/* background-color: #444; */
+		/* margin-top: -100px; */
+		padding-right: 15px;
+		width: 50%;
+	}
+
+	/**** FOOTER *****/
+	.sectionFooter1 {
+		justify-content: flex-end;
+	}
+
+	.footerMenuRafiki {
+		flex-direction: row;
+		margin-right: 30px;
+		margin-bottom: 0px;
+	}
+
+	.sectionFooter2 {
+		flex-direction: row;
+
+	/* justify-content: flex-end; */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+/* navbar */
+.navbar {
+	background-color: #2b281fa2;
+}
+
+.nav-item {
+	border-bottom: 0px;
+}
+
+.menu-utama {
+	margin-left: 120px;
+}
+
+
+
+
+
+	/* slide 4 
+	text terbang can you Run This Game?*/
+
+	.flyingText {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	/* slide 6 */
+	.slideRafiki.slide_6 .inputRafiki {
+		width: 50%;
+	}
+
+	.slideRafiki.slide_6 .inputRafiki input {
+		position: relative;
+		top: 15px;
+		width: 100%;
+	}
+	.slideRafiki.slide_6 button {
+		width: 140px;
+		top: 3px;
+		left: 10px;
+	}
+
+	/* slide 5 */
+	.wrapper__slide5 {
+		flex-direction: row;
+	}
+
+	.colomText__slide5{
+		width: 50%;	
+	}
+	.colomgrid__slide5 {
+		width: 50%;	
+		margin-right: 70px;
+	}
+	/**** FOOTER ****/
+	.sectionFooter1 {
+		width: 80%;
+	}
+
+	.sectionFooter2 {
+		width: 80%;
+	}
+
+	.footerRafiki hr {
+		width: 80%;
+	}
+
+	.footerRafiki {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	/*body */
+	body {
+		width: 75%;
+		min-width: 992px;
+		margin: auto;
+	}
+
+	/* Navbar */
+	.wrapper-nav {
+		width: 75%;
+		min-width: 992px;
+		margin: auto;
+	}
+	.navbar-brand {
+		padding-left: 5%;
+		padding-right: 10%;
+	}
+
+	.menu-utama .nav-item {
+		margin-right: 30px;
+	}
+
+	.menu-login {
+		padding-right: 10%;
+	}
+
+	/* slide 2 */
+	.wrapper__slide2 {
+		padding: 0 40px;
+	}
+
+	.wrapper__slide2__chlid1 {
+		text-align: left;
+
+		width: 25%;
+	}
+	.wrapper__slide2__chlid2 {
+		width: 75%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

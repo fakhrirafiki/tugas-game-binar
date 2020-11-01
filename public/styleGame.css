@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    /* background-image: linear-gradient(#eacda3, #d6ae7b); */
+    min-height: 100vh;
+    background-image: url("img/the-games-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    width: 150px;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #503f287d;
+    border: 2px solid #ffffff47;
+    color: #ffffff47;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #cfb969;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+}
+
+.wrapper {
+    width: 700px;
+    margin: auto;
+    border: 1px solid #fff;
+}
+
+.container > .comp {
+    height: 45vh;
+    background-color: #ad7c0030;
+    border-bottom: 5px solid #fff;
+    position: relative;
+}
+
+.container > .user {
+    height: 45vh;
+    background-color: #ad7c0030;
+    position: relative;
+}
+
+.user-choice__container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+.user-choice__container img {
+    width: 70px;
+    height: 70px;
+    background-color: #9c835f;
+    padding: 15px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin: 0 10px;
+    transition: linear 200ms;
+}
+
+.user-choice__container img:hover {
+    background-color: #503f28;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.user-choice__container img:nth-child(2) {
+    position: relative;
+    bottom: 30px;
+}
+
+.big-image__container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.comp .big-image__container {
+    bottom: 50px;
+    transform: scaleY(-1);
+}
+
+.user .big-image__container {
+    top: 50px;
+}
+
+.big-image__container img {
+    width: 100px;
+    height: 100px;
+}
+
+/* SCORE ATAS*/
+.score__container {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.score__container .score__wrapper {
+    padding: 0 10px;
+    width: 220px;
+    position: relative;
+    top: 20px;
+}
+
+.score__container > div > p {
+    background-color: #cfb969;
+    width: 100%;
+    height: 40px;
+    border: 5px solid #9c835f;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score__container .user p {
+    padding: 0 50px 0 0;
+}
+
+.score__container .comp p {
+    padding: 0 0 0 50px;
+}
+
+.score__container > div > h4 {
+    background-color: #cfb969;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #9c835f;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+}
+
+#user__score {
+    right: 0;
+}
+
+.score__wrapper.user {
+}
+
+.score__wrapper.comp {
+}
+
+/* BOARD TENGAH*/
+.board {
+    width: 180px;
+    font-size: 18px;
+    border: 5px solid #fff;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 20000;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: -241px;
+    transform: rotate(90deg);
+    background-color: #cfb969;
+}
+
+.menu h3:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.menu h3 {
+    display: block;
+    width: 130px;
+    padding: 10px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.shake {
+    margin-top: 15px;
+}
+
+.stopEventListener {
+    pointer-events: none;
+}
