@@ -1,1 +1,170 @@
-[{"maxScore":1,"playerScore":1,"computerScore":0,"playerHeroes":["Scissors","Scissors"],"compHeroes":["Scissors","Paper"],"time":"2020-11-01T07:54:07.730Z","id":1604217247730,"winner":"PLAYER(YOU)"},{"maxScore":2,"playerScore":2,"computerScore":1,"playerHeroes":["Paper","Scissors","Rock"],"compHeroes":["Rock","Rock","Scissors"],"time":"2020-11-01T08:00:43.133Z","id":1604217643133,"winner":"PLAYER(YOU)"}]
+[
+    {
+        "maxScore": 1,
+        "playerScore": 1,
+        "computerScore": 0,
+        "playerHeroes": [
+            "Scissors",
+            "Scissors"
+        ],
+        "compHeroes": [
+            "Scissors",
+            "Paper"
+        ],
+        "time": "2020-11-01T07:54:07.730Z",
+        "id": 1604217247730,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 2,
+        "computerScore": 1,
+        "playerHeroes": [
+            "Paper",
+            "Scissors",
+            "Rock"
+        ],
+        "compHeroes": [
+            "Rock",
+            "Rock",
+            "Scissors"
+        ],
+        "time": "2020-11-01T08:00:43.133Z",
+        "id": 1604217643133,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 2,
+        "computerScore": 0,
+        "playerHeroes": [
+            "Scissors",
+            "Rock",
+            "Scissors"
+        ],
+        "compHeroes": [
+            "Paper",
+            "Rock",
+            "Paper"
+        ],
+        "time": "2020-11-01T13:14:56.012Z",
+        "id": 1604236496012,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 2,
+        "computerScore": 0,
+        "playerHeroes": [
+            "Scissors",
+            "Paper",
+            "Rock",
+            "Scissors",
+            "Paper"
+        ],
+        "compHeroes": [
+            "Scissors",
+            "Paper",
+            "Rock",
+            "Paper",
+            "Rock"
+        ],
+        "time": "2020-11-01T13:15:06.630Z",
+        "id": 1604236506630,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 1,
+        "computerScore": 2,
+        "playerHeroes": [
+            "Scissors",
+            "Rock",
+            "Scissors",
+            "Rock"
+        ],
+        "compHeroes": [
+            "Rock",
+            "Rock",
+            "Paper",
+            "Paper"
+        ],
+        "time": "2020-11-01T13:15:16.082Z",
+        "id": 1604236516082,
+        "winner": "COMP"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 2,
+        "computerScore": 1,
+        "playerHeroes": [
+            "Scissors",
+            "Rock",
+            "Paper"
+        ],
+        "compHeroes": [
+            "Paper",
+            "Paper",
+            "Rock"
+        ],
+        "time": "2020-11-01T13:15:23.444Z",
+        "id": 1604236523444,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 1,
+        "computerScore": 2,
+        "playerHeroes": [
+            "Scissors",
+            "Rock",
+            "Scissors",
+            "Scissors"
+        ],
+        "compHeroes": [
+            "Paper",
+            "Rock",
+            "Rock",
+            "Rock"
+        ],
+        "time": "2020-11-01T13:15:31.797Z",
+        "id": 1604236531797,
+        "winner": "COMP"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 2,
+        "computerScore": 1,
+        "playerHeroes": [
+            "Scissors",
+            "Rock",
+            "Scissors",
+            "Paper"
+        ],
+        "compHeroes": [
+            "Paper",
+            "Paper",
+            "Scissors",
+            "Rock"
+        ],
+        "time": "2020-11-01T14:35:26.632Z",
+        "id": 1604241326632,
+        "winner": "PLAYER(YOU)"
+    },
+    {
+        "maxScore": 2,
+        "playerScore": 0,
+        "computerScore": 2,
+        "playerHeroes": [
+            "Scissors",
+            "Scissors"
+        ],
+        "compHeroes": [
+            "Rock",
+            "Rock"
+        ],
+        "time": "2020-11-01T14:35:48.324Z",
+        "id": 1604241348324,
+        "winner": "COMP"
+    }
+]

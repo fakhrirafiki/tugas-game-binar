@@ -719,7 +719,7 @@ right: 5px;
 	/* Navbar */
 	.wrapper-nav {
 		width: 75%;
-		min-width: 992px;
+		min-width: 1012px;
 		margin: auto;
 	}
 	.navbar-brand {

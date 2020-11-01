@@ -1,16 +1,16 @@
 body {
     color: #ffffff96;
-    padding-bottom: 550px;
+    padding-bottom: 200px;
 }
 h1 {
     color: #fff;
     font-family: monospace;
     letter-spacing: 2px;
     text-align: center;
-    padding: 30px;
+    padding: 100px 30px 30px 30px;
 }
 
-table {
+.table1 {
     text-align: center;
     min-width: 500px;
 
@@ -21,6 +21,38 @@ table {
     background-color: #403e3c5e;
     border: 5px solid #3c3c3c;
     text-align: center;
+}
+
+.table2 {
+    text-align: center;
+    min-width: 800px;
+
+    margin: auto;
+    line-height: 200%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #403e3c5e;
+    border: 5px solid #3c3c3c;
+    text-align: center;
+}
+
+.table2,
+.table2 th,
+.table2 td {
+    border: 2px solid #9483831f;
+    border-collapse: collapse;
+    padding: 10px 5px;
+}
+
+.table2 th {
+    height: 70px;
+    background-color: #967a5154;
+}
+
+.table2 tr {
+    /* height: 70px;
+    background-color: #967a5154; */
+    padding-top: 50px;
 }
 
 .containerBoardHistories {
@@ -53,6 +85,13 @@ table {
 nav {
     position: fixed;
     left: 50%;
-    bottom: 0;
+    top: 0;
     transform: translate(-50%, 0%);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #463a1d;
+    width: 100%;
+    border-bottom: 3px solid #f9f9f961;
 }

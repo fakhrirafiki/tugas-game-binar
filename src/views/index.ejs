@@ -25,13 +25,12 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav menu-utama">
           <a href="#" class="nav-item nav-link">HOME</a>
-          <a href="#" class="nav-item nav-link">WORK</a>
-          <a href="#" class="nav-item nav-link">CONTACT</a>
-          <a href="#" class="nav-item nav-link">ABOUT ME</a>
+          <a href="/game" class="nav-item nav-link">PLAY GAME</a>
+          <a href="/history" class="nav-item nav-link">HISTORY</a>
         </div>
         <div class="navbar-nav ml-auto menu-login">
-          <a href="#" class="nav-item nav-link">SIGN UP</a>
-          <a href="#" class="nav-item nav-link">LOGIN</a>
+          <!-- <a href="#" class="nav-item nav-link">SIGN UP</a> -->
+          <!-- <a href="#" class="nav-item nav-link">LOGIN</a> -->
         </div>
       </div>
     </nav>
@@ -151,9 +150,9 @@
   <div class="slideRafiki slide_5">
     <div class="wrapper__slide5">
       <div class="colomText__slide5">
-        <h2>TOP SCORES</h2>
-        <p>This top score from various provided<br /> on this platform</p>
-        <button class="btn btn-warning .btnRafiki  mb-2">See more</button>
+        <h2>GAME HISTORY</h2>
+        <p>Semua histori tercatat<br /> di halaman histori</p>
+        <button onclick="window.location.href='/history'" class="btn btn-warning .btnRafiki  mb-2">Game History</button>
       </div>
       <div class="colomgrid__slide5">
 
@@ -211,9 +210,9 @@
       <form class="form-inline">
         <div class="inputRafiki">
           <span>Your email address</span>
-          <input type="email" onfocus="this.value=''" value="fakhri.rafiki@binar.co.id"">
+          <input id="inputEmail" type="email" onfocus="this.value=''" value="fakhri.rafiki@binar.co.id"">
         </div>
-        <button type=" submit" class="btn btn-warning .btnRafiki  mb-2">Subscribe now</button>
+        <button id=" emailSubmitBtn" type=" submit" class="btn btn-warning .btnRafiki  mb-2">Subscribe now</button>
       </form>
     </div>
   </div>
@@ -252,6 +251,47 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+
+  <script>
+    const submitBtn = document.getElementById(' emailSubmitBtn');
+    submitBtn.addEventListener('click', async (event) => {
+      event.preventDefault();
+
+
+      const email = document.getElementById('inputEmail');
+      // const title = document.getElementById('title');
+      // const author = document.getElementById('author');
+
+      console.log(email.value)
+
+      if (!email.value) {
+        return alert('Please input an email adress')
+      }
+
+      const data = {
+        email: email.value
+      }
+
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+
+        },
+        body: JSON.stringify(data)
+      };
+
+      const response = await fetch('/apis/postEmail', options);
+      const json = await response.json();
+
+
+      // email.value = "";
+
+      alert(json.message);
+
+    })
+  </script>
 
 </body>
 

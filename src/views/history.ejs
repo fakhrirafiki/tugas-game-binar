@@ -14,28 +14,30 @@
 
 <body>
     <h1>Summary Statistics</h1>
+
+
+
     <div class="containerBoardHistories">
         <div class="boardHistories">
             <div>YOU</div>
             <div>
-                <p>36x</p>
                 <p>MATCH</p>
             </div>
             <div>COMP</div>
         </div>
     </div>
 
-    <table>
+    <table class="table1">
         <tbody>
             <tr>
-                <td>20</td>
+                <td><%= summaryStat.playerWinTimes %></td>
                 <td>Win</td>
-                <td>10</td>
+                <td><%= summaryStat.compWinTimes %></td>
             </tr>
             <tr>
-                <td>13%</td>
+                <td><%= summaryStat.playerWinPercentage %> %</td>
                 <td>Win Percentage</td>
-                <td>14%</td>
+                <td><%= summaryStat.compWinPercentage %> %</td>
             </tr>
             <tr>
                 <td></td>
@@ -43,31 +45,74 @@
                 <td></td>
             </tr>
             <tr>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.playerPaperCount %> (<%= summaryStat.playerPaperPercentage %> %)</td>
                 <td>
-                    <img class="hero" id="Paper" value="Paper" src="assets/Paper.png" alt="">
+                    <img class="hero" src="assets/Paper.png" alt="">
                 </td>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.compPaperCount %>x (<%= summaryStat.compPaperPercentage %> %)</td>
             </tr>
             <tr>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.playerScissorsCount %>x (<%= summaryStat.playerScissorsPercentage %> %)</td>
                 <td>
-                    <img class="hero" id="Scissors" value="Scissors" src="assets/Scissors.png" alt="">
+                    <img class="hero" src="assets/Scissors.png" alt="">
                 </td>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.compScissorsCount %>x (<%= summaryStat.compScissorsPercentage %> %)</td>
             </tr>
 
             <tr>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.playerRockCount %>x (<%= summaryStat.playerRockPercentage %> %)</td>
                 <td>
-                    <img class="hero" id="Rock" value="Rock" src="assets/Rock.png" alt="">
+                    <img class="hero" src="assets/Rock.png" alt="">
                 </td>
-                <td>47x (45%)</td>
+                <td><%= summaryStat.compRockCount %>x (<%= summaryStat.compRockPercentage %> %)</td>
             </tr>
         </tbody>
     </table>
 
+
     <h1>Detail Statistics</h1>
+
+    <% if (statisticData.length > 0) { %>
+    <table class="table2">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <!-- <th>Timestamp</th> -->
+                <th>Player Heroes</th>
+                <th>Comp Heroes</th>
+                <th style="line-height: 100%;">
+                    Final Score <br />
+                    <span style="font-size: 14px;">(You : Comp)</span>
+                </th>
+                <th>Winner</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% statisticData.forEach(item => { %>
+            <tr>
+                <td><%= item.id %></td>
+                <td>
+                    <% item.playerHeroes.forEach(hero => { %>
+                    <img class="hero" src="assets/<%= hero %>.png" alt=""><br />
+                    <% }) %>
+                </td>
+                <!-- <td><%= item.compHeroes %></td> -->
+                <td>
+                    <% item.compHeroes.forEach(hero => { %>
+                    <img class="hero" src="assets/<%= hero %>.png" alt=""><br />
+                    <% }) %>
+                </td>
+                <td><%= item.playerScore %> : <%= item.computerScore %></td>
+                <td><%= item.winner %></td>
+                <% }) %>
+            </tr>
+        </tbody>
+    </table>
+    <% } else { %>
+    <p>There are no data to display...</p>
+    <% } %>
+
+
 
 
     <nav>

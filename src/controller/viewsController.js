@@ -1,4 +1,5 @@
 const statisticData = require('../database/gameHistories.json')
+const summaryStat = require('./module-function/getSummaryStatistic')
 
 class ViewsController {
 
@@ -6,8 +7,10 @@ class ViewsController {
         res.render(
             'history',
             {
-                statisticData: statisticData
+                statisticData: statisticData,
+                summaryStat: summaryStat
             }
+
         )
     }
     static getIndexView = (req, res) => {
